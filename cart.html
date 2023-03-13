@@ -1,0 +1,37 @@
+<!doctype html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ─── DaisuUi Cdn ────────────────────────────────────────────── -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- ─── Tailwind Cdn ────────────────────────────────────────────── -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Local Storage Introduce</title>
+</head>
+
+<body>
+    <section class="container mx-auto my-8">
+        <h1 class="text-3xl md:text-5xl font-semibold text-center mb-6 text-pink-500">Local Storage Cart</h1>
+
+        <div class="my-0 py-16 space-y-3 bg-black rounded-lg shadow-sm w-3/4 mx-auto px-8">
+            <input type="text" placeholder="Product Name" id="product-name"
+                class="input w-full max-w-xs focus:outline-none" /> <br>
+            <input type="text" placeholder="Product Quantity" id="product-quantity" 
+                class="input w-full max-w-xs focus:outline-none" /> <br>
+            <button onclick="addProduct()" class="btn btn-secondary border-0 capitalize">
+                Add Product
+            </button>
+            <ul id="product-container" class="text-white font-semibold"></ul>
+        </div>
+
+    </section>
+
+    <!-- ─── JavaScript File ─────────────────────────────────────────── -->
+    <script src="/main.js"></script>
+</body>
+
+</html>
